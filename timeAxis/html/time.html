@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../css/newtime.css" type="text/css" />
+</head>
+<body>
+<div id="timePlay">
+    <div class="timeControl-box">
+        <span class="u-progress"></span>
+        <div class="timeControl play"></div>
+    </div>
+    <div class="timeProgress-box">
+        <span class="u-initialize"></span>
+        <div class="hover-popup" style="display: none; left: 586px;">19:00</div>
+        <div class="curr-popup for-click" >15:00</div>
+        <div class="timeProgress-hide">
+            <div class="timeProgress-inner">
+                <div class="timeProgress u-time-box">
+                    <div class="timeProgress-bar">
+                        <div class="curr-popup for-animate">
+                            <span>周五</span>
+                            <span>07-11:00</span>
+                        </div>
+                    </div>
+                </div>
+                <ul class="u-time-box j-time-con"></ul>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script type="text/javascript" src="../js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../js/newtime.js"></script>
+<script>
+     TimePlay({startDate: 20181020,
+        endDate: 20181027,
+        callback:function(date){
+            console.log(date)
+        }
+    });
+</script>
+</html>
